@@ -56,10 +56,10 @@
                         <a class="page-scroll" href="about.html">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Recipes</a>
+                        <a class="page-scroll" href="recipes.html">Recipes</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="profile.html">My Recipes</a>
+                        <a class="page-scroll" href="#portfolio">My Recipes</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#team">Help</a>
@@ -74,7 +74,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header 
+    <!-- Header
     <header>
         <div class="container">
             <div class="intro-text">
@@ -133,6 +133,11 @@
                 </div>
             </div>
             <div class="row">
+                <div class = "col-md-4 col-sm-6 portfolio-item">
+                  <img id = "image" alt = "image text here" width = "100"/>
+                  <input type "file" oncharge="document.getElementById('image').src = window.URL.createObjectURL(this.files[0])">
+
+                </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
