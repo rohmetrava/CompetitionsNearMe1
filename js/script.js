@@ -22,10 +22,4 @@ $(".title-rename-form3").on("submit", function(evt) {
 	//alert(newTitle)
 
 })
-$(".search-button").onClick( function(evt){
-	console.log("hi");
-
-	evt.preventDefault()
-	
-}
 
