@@ -22,7 +22,7 @@ $(".title-rename-form3").on("submit", function(evt) {
 	//alert(newTitle)
 
 })
-$(".search-button").on("Search",function(evt){
+$(".search-bar-form").on("Search",function(evt){
 	console.log("hi");
 
 	evt.preventDefault()

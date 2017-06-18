@@ -105,8 +105,9 @@ var Kebab = ["kebab", "Middle-eastern", "peach", "chicken", "chutney"]
 var Macarons = ["dessert", "french","macaron"]
 var Penne = ["penne", "tomato", "Italian", "pasta", "pesto"]
 
-function search(){
+function search(evt){
     searchTerm = $(".search-bar").val()
+    
     for (i = 0; i< AsparagusFrittata.length; i++){
         if (searchTerm == AsparagusFrittata[i]){
             //alert("Asparagus frittata")
@@ -173,6 +174,7 @@ function search(){
              //document.getElementsByClassName("asparagus").style.display = 'none';
         }
     }
+    evt.preventDefault()
 }
              </script>
             <div class="row">
