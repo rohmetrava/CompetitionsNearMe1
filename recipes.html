@@ -74,54 +74,12 @@
                 <div class="intro-lead-in">Community Recipes</div>
                 <div class="intro-heading">Find Your Favorite Recipes!</div>
                 <a href="#portfolio" class="page-scroll btn btn-xl">Let's go!</a>
-                <h2>Search</h2>
-                <form class ="title-rename-form2">
-                    <input type = "text" class = "title-rename">
-                    <button type = "submit"class="btn btn-default btn-xl sr-button">Submit</button>
-                </form>
+                
             </div>
             
         </div>
 
     </header>
-
-    <!-- Services Section
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-            </div>
-        </div>
-    </section>-->
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray">
@@ -130,10 +88,94 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Community</h2>
                     <h3 class="section-subheading text-muted">Browse through our many recipes!</h3>
+                    <h2>Search</h2>
+                    <form class ="search-bar-form">
+                        <input type = "text" class = "search-bar" id = "search-bar">
+                        <button type = "Search" onClick ="search()"class="search-button btn btn-default btn-xl sr-button">Submit</button>
+
+                    </form>
                 </div>
             </div>
+            <script>
+var AsparagusFrittata = ["vegetable", "vegetarian", "italian", "fried egg", "cheese", "asparagus", "frittata"]
+var Bruschetta = ["appetizer", "vegetarian", "tomato", "bread", "italian", "bruschetta"]
+var FruitSushi = ["fruit", "sushi", "dessert"]
+var Kebab = ["kebab", "Middle-eastern", "peach", "chicken", "chutney"]
+var Macarons = ["dessert", "french","macaron"]
+var Penne = ["penne", "tomato", "Italian", "pasta", "pesto"]
+
+function search(){
+    searchTerm = $(".search-bar").val()
+    for (i = 0; i< AsparagusFrittata.length; i++){
+        if (searchTerm == AsparagusFrittata[i]){
+            //alert("Asparagus frittata")
+            $(".asparagus").show()
+            break;
+        }
+        else{
+             $(".asparagus").hide()
+             //document.getElementsByClassName("asparagus").style.display = 'none';
+        }
+    }
+    for (i = 0; i< Bruschetta.length; i++){
+        if (searchTerm == Bruschetta[i]){
+            //alert("Bruschetta")
+            $(".bruschetta").show()
+            break;
+        }
+        else{
+             $(".bruschetta").hide()
+             //document.getElementsByClassName("asparagus").style.display = 'none';
+        }
+    }
+    for (i = 0; i< FruitSushi.length; i++){
+        if (searchTerm == FruitSushi[i]){
+            //alert("Fruit Sushi")
+            $(".fruit-sushi").show()
+            break;
+        }
+        else{
+             $(".fruit-sushi").hide()
+             //document.getElementsByClassName("asparagus").style.display = 'none';
+        }
+    }
+    for (i = 0; i< Kebab.length; i++){
+        if (searchTerm == Kebab[i]){
+            //alert("Kebab")
+            $(".kebab").show()
+            break;
+        }
+        else{
+             $(".kebab").hide()
+             //document.getElementsByClassName("asparagus").style.display = 'none';
+        }
+    }
+    for (i = 0; i< Macarons.length; i++){
+        if (searchTerm == Macarons[i]){
+            //alert("Macarons")
+            $(".macaron").show()
+            break;
+        }
+        else{
+             $(".macaron").hide()
+             //document.getElementsByClassName("asparagus").style.display = 'none';
+        }
+    }
+    for (i = 0; i< Penne.length; i++){
+        if (searchTerm == Penne[i]){
+            //alert("Penne")
+            $(".penne").show()
+            break;
+        }
+        else{
+             $(".penne").hide()
+             //document.getElementsByClassName("asparagus").style.display = 'none';
+        }
+    }
+}
+             </script>
             <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item asparagus">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -143,10 +185,10 @@
                         <img src="http://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/4/7/1/EI1B03_frittata-with-asparagus_s4x3.jpg.rend.hgtvcom.616.462.jpeg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Asparagus Frittata</h4>
+                        <h4 class="vegetable vegetarian italian fried egg cheese">Asparagus Frittata</h4>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item bruschetta">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -156,10 +198,10 @@
                         <img src="http://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/8/22/0/WU0304H_bruschetta_s4x3.jpg.rend.hgtvcom.966.725.jpeg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Bruschetta</h4>
+                        <h4 class="appetizer vegetarian tomato bread italian">Bruschetta</h4>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item fruit-sushi">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -169,10 +211,10 @@
                         <img src="http://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/9/7/1/MN0503H_fun-fruit-sushi_s4x3.jpg.rend.hgtvcom.616.462.jpeg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Fun Fruit Sushi<br></br></h4>
+                        <h4 class="sushi fruit dessert">Fun Fruit Sushi<br></br></h4>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item kebab">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -182,10 +224,10 @@
                         <img src="http://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/5/8/2/FN_Aarti-Sequeira-Chicken-Kebabs_s4x3.jpg.rend.hgtvcom.966.725.jpeg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Chicken Kebabs with No-Cook Peach Chutney</h4>
+                        <h4 class="chutney chicken kebab middle-eastern peach">Chicken Kebabs with No-Cook Peach Chutney</h4>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item macaron">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -195,10 +237,10 @@
                         <img src="https://img.vimbly.com/images/full_photos/macarons-6.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                      <h4>French Macarons</h4>
+                      <h4 class="dessert french macaron">French Macarons</h4>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item penne">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -208,7 +250,7 @@
                         <img src="http://food.fnr.sndimg.com/content/dam/images/food/fullset/2004/5/28/0/ei1c12_penne_pesto.jpg.rend.hgtvcom.966.725.jpeg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Penne with Sun-Dried Tomato Pesto</h4>
+                        <h4 class="pasta italian pesto tomato">Penne with Sun-Dried Tomato Pesto</h4>
                     </div>
                 </div>
             </div>
