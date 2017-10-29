@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>KitKat</title>
+    <title>Competitions Near Me</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -42,21 +42,21 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                 <a class="navbar-brand page-scroll" href="#page-top">KitKat</a>
-                  <img href="#page-top" src="img/kitkat-logo.png" alt="KitKat" width=55 height=55>
+                 <a class="navbar-brand page-scroll" href="index.html">Competitions Near Me</a>
+                  <img href="index.html" src="https://i.imgur.com/V8IEq7q.png?1" alt="CompetitionsNearMe" width=55 height=55>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="navbar-brand page-scroll"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Community Recipes</a>
+                        <a class="page-scroll" href="#page-top">Competitions</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="profile.html">My Recipes</a>
+                        <a class="page-scroll" href="profile.html">My Profile</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -72,8 +72,8 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Community Recipes</div>
-                <div class="intro-heading">Find Your Favorite Recipes!</div>
+                <div class="intro-lead-in">Competitions</div>
+                <div class="intro-heading">Browse through our many competitions.</div>
                 <a href="#portfolio" class="page-scroll btn btn-xl">Let's go!</a>
                 
             </div>
@@ -87,8 +87,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Community</h2>
-                    <h3 class="section-subheading text-muted">Browse through our many recipes!</h3>
+                    <h2 class="section-heading"></h2>
+                    <h3 class="section-subheading text-muted">Browse through our many competitions!</h3>
                     <h2>Search</h2>
                     <form class ="search-bar-form">
                         <input type = "text" class = "search-bar" id = "search-bar">
@@ -98,79 +98,79 @@
                 </div>
             </div>
             <script>
-var AsparagusFrittata = ["vegetable", "vegetarian", "italian", "fried egg", "cheese", "asparagus", "frittata"]
-var Bruschetta = ["appetizer", "vegetarian", "tomato", "bread", "italian", "bruschetta"]
-var FruitSushi = ["fruit", "sushi", "dessert"]
-var Kebab = ["kebab", "Middle-eastern", "peach", "chicken", "chutney"]
-var Macarons = ["dessert", "french","macaron"]
-var Penne = ["penne", "tomato", "Italian", "pasta", "pesto"]
+var Art = ["art", "Valdosta", "National", "Americas", "Paperworks", "LeMoyne", "Chain", "Parks", "Festival", "31601", "58707", "32301"]
+var Dance = ["dance", "Southwestern", "Invitational", "Paragon", "Open", "Dancesport", "Hollywood", "Championships", "75063", "06902", "91608"]
+var Hackathons = ["hackathons", "hackathon", "CodeRed", "Colony", "Civic", "Tech", "Challenge", "Harvard", "HackEd", "77204", "60606", "02138"]
+var Mathematics = ["mathematics", "American", "Math", "AMC", "Regions", "League", "ARML", "PUMAC", "48390", "30609", "08544"]
+var Piano = ["piano", "Cleveland", "International", "North", "American", "Biennial", "MTNA–STECHER", "HOROWITZ", "TWO", "44106", "53211", "32830"]
+var Tennis = ["tennis", "United", "States", "Association", "USTA", "48377", "90001", "32003"]
 
 function search(evt){
     searchTerm = $(".search-bar").val()
     
-    for (i = 0; i< AsparagusFrittata.length; i++){
-        if (searchTerm == AsparagusFrittata[i]){
+    for (i = 0; i< Art.length; i++){
+        if (searchTerm == Art[i]){
             //alert("Asparagus frittata")
-            $(".asparagus").show()
+            $(".art").show()
             break;
         }
         else{
-             $(".asparagus").hide()
+             $(".art").hide()
              //document.getElementsByClassName("asparagus").style.display = 'none';
         }
     }
-    for (i = 0; i< Bruschetta.length; i++){
-        if (searchTerm == Bruschetta[i]){
+    for (i = 0; i< Dance.length; i++){
+        if (searchTerm == Dance[i]){
             //alert("Bruschetta")
-            $(".bruschetta").show()
+            $(".dance").show()
             break;
         }
         else{
-             $(".bruschetta").hide()
+             $(".dance").hide()
              //document.getElementsByClassName("asparagus").style.display = 'none';
         }
     }
-    for (i = 0; i< FruitSushi.length; i++){
-        if (searchTerm == FruitSushi[i]){
+    for (i = 0; i< Hackathons.length; i++){
+        if (searchTerm == Hackathons[i]){
             //alert("Fruit Sushi")
-            $(".fruit-sushi").show()
+            $(".hackathons").show()
             break;
         }
         else{
-             $(".fruit-sushi").hide()
+             $(".hackathons").hide()
              //document.getElementsByClassName("asparagus").style.display = 'none';
         }
     }
-    for (i = 0; i< Kebab.length; i++){
-        if (searchTerm == Kebab[i]){
+    for (i = 0; i< Mathematics.length; i++){
+        if (searchTerm == Mathematics[i]){
             //alert("Kebab")
-            $(".kebab").show()
+            $(".mathematics").show()
             break;
         }
         else{
-             $(".kebab").hide()
+             $(".mathematics").hide()
              //document.getElementsByClassName("asparagus").style.display = 'none';
         }
     }
-    for (i = 0; i< Macarons.length; i++){
-        if (searchTerm == Macarons[i]){
+    for (i = 0; i< Piano.length; i++){
+        if (searchTerm == Piano[i]){
             //alert("Macarons")
-            $(".macaron").show()
+            $(".piano").show()
             break;
         }
         else{
-             $(".macaron").hide()
+             $(".piano").hide()
              //document.getElementsByClassName("asparagus").style.display = 'none';
         }
     }
-    for (i = 0; i< Penne.length; i++){
-        if (searchTerm == Penne[i]){
+    for (i = 0; i< .length; i++){
+        if (searchTerm == Tennis[i]){
             //alert("Penne")
-            $(".penne").show()
+            $(".tennis").show()
             break;
         }
         else{
-             $(".penne").hide()
+             $(".tennis").hide()
              //document.getElementsByClassName("asparagus").style.display = 'none';
         }
     }
@@ -178,82 +178,82 @@ function search(evt){
 }
              </script>
             <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item asparagus">
+                <div class="col-md-4 col-sm-6 portfolio-item art">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="http://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/4/7/1/EI1B03_frittata-with-asparagus_s4x3.jpg.rend.hgtvcom.616.462.jpeg" class="img-responsive" alt="">
+                        <img src="https://static3.depositphotos.com/1002263/147/i/950/depositphotos_1475670-stock-photo-oval-art-palette-with-paints.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4 class="vegetable vegetarian italian fried egg cheese">Asparagus Frittata</h4>
+                        <h4 class="art Valdosta National Americas Paperworks LeMoyne Chain Parks Festival 31601 58707 32301">Art Competitions</h4>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item bruschetta">
+                <div class="col-md-4 col-sm-6 portfolio-item dance">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="http://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/8/22/0/WU0304H_bruschetta_s4x3.jpg.rend.hgtvcom.966.725.jpeg" class="img-responsive" alt="">
+                        <img src="https://bloximages.chicago2.vip.townnews.com/mtstandard.com/content/tncms/assets/v3/editorial/5/e6/5e6d15ec-f461-5d01-b6b2-130a11a05d4e/54a99bc897fae.image.gif" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4 class="appetizer vegetarian tomato bread italian">Bruschetta</h4>
+                        <h4 class="dance Southwestern Invitational Paragon Open Dancesport Hollywood Championships 75063 06902 91608">Dance Competitions</h4>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item fruit-sushi">
+                <div class="col-md-4 col-sm-6 portfolio-item hackathons">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="http://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/9/7/1/MN0503H_fun-fruit-sushi_s4x3.jpg.rend.hgtvcom.616.462.jpeg" class="img-responsive" alt="">
+                        <img src="https://pbs.twimg.com/media/DLsLdjXWkAI1Yi-.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4 class="sushi fruit dessert">Fun Fruit Sushi<br></br></h4>
+                        <h4 class="hackathons hackathon CodeRed Colony Civic Tech Challenge Harvard HackEd 77204 60606 02138">Hackathons<br></br></h4>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item kebab">
+                <div class="col-md-4 col-sm-6 portfolio-item mathematics">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="http://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/5/8/2/FN_Aarti-Sequeira-Chicken-Kebabs_s4x3.jpg.rend.hgtvcom.966.725.jpeg" class="img-responsive" alt="">
+                        <img src="http://cliparting.com/wp-content/uploads/2016/05/Math-clipart-free-clipart-images-3.jpeg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4 class="chutney chicken kebab middle-eastern peach">Chicken Kebabs with No-Cook Peach Chutney</h4>
+                        <h4 class="mathematics American Math AMC Regions League ARML PUMAC 48390 30609 08544">Mathematics Competitions</h4>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item macaron">
+                <div class="col-md-4 col-sm-6 portfolio-item piano">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="https://img.vimbly.com/images/full_photos/macarons-6.jpg" class="img-responsive" alt="">
+                        <img src="http://clipartix.com/wp-content/uploads/2016/04/Jazz-piano-clipart-free-clipart-images-2.jpg" alt="">
                     </a>
                     <div class="portfolio-caption">
-                      <h4 class="dessert french macaron">French Macarons</h4>
+                      <h4 class="piano Cleveland International North American Biennial MTNA–STECHER HOROWITZ TWO 44106 53211 32830">Piano Competitions</h4>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item penne">
+                <div class="col-md-4 col-sm-6 portfolio-item tennis">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="http://food.fnr.sndimg.com/content/dam/images/food/fullset/2004/5/28/0/ei1c12_penne_pesto.jpg.rend.hgtvcom.966.725.jpeg" class="img-responsive" alt="">
+                        <img src="http://www.clker.com/cliparts/6/O/x/i/u/d/tennis-racket-md.png" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4 class="pasta italian pesto tomato">Penne with Sun-Dried Tomato Pesto</h4>
+                        <h4 class="tennis United States Association USTA 48377 90001 32003">Tennis Competitions</h4>
                     </div>
                 </div>
             </div>
@@ -434,27 +434,33 @@ function search(evt){
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Asparagus Frittata</h2>
+                                <h2>Art Competitions</h2>
                                 <p class="item-intro text-muted">
-<b>Ingredients:</b><br>
+<b>Competitions For You:</b><br>
 
-6 large eggs<br>
-2 tablespoons whipping cream<br>
-1/2 teaspoon salt<br>
-1/4 teaspoon freshly ground black pepper<br>
-1 tablespoon olive oil<br>
-1 tablespoon butter<br>
-12 ounces asparagus, trimmed, cut into 1/4 to 1/2-inch pieces<br>
-1 tomato, seeded, diced<br>
-Salt<br>
-3 ounces Fontina, diced<br>
+Valdosta National 2018: Zip Code 1) 31601 Valdosta - Georgia 
+   <a href="http://artdeadlines.com/artman/publish/valdosta.shtml">http://artdeadlines.com/artman/publish/valdosta.shtml</a>
+<br>
+
+    Americas 2018: Paperworks: Zip Code 2) 58707 Minot - North Dakota
+    <a href="https://www.minotstateu.edu/nac/_documents/pw_2018.pdf">https://www.minotstateu.edu/nac/_documents/pw_2018.pdf</a>
+
+<br>
+LeMoyne Chain of Parks Art Festival: Zip Code 3) 32301 Tallahassee - Florida
+    <a href="http://chainofparks.org/artists/">http://chainofparks.org/artists/</a>
+<br>
+
   </p>
 
                                 <p>
-                                  Recipe:<br>
-                                  Preheat the broiler. Whisk the eggs, cream, 1/2 teaspoon salt, and pepper in a medium bowl to blend. Set aside. Heat the oil and butter in a 9 1/2-inch-diameter nonstick ovenproof skillet over medium heat. Add the asparagus and saute until crisp-tender, about 2 minutes. Raise the heat to medium-high. Add the tomato and a pinch of salt and saute 2 minutes longer. Pour the egg mixture over the asparagus mixture and cook for a few minutes until the eggs start to set. Sprinkle with cheese. Reduce heat to medium-low and cook until the frittata is almost set but the top is still runny, about 2 minutes. Place the skillet under the broiler. Broil until the top is set and golden brown on top, about 5 minutes. Let the frittata stand 2 minutes. Using a rubber spatula, loosen the frittata from skillet and slide the frittata onto a plate.
+                                  Description:<br>
+                                  Art is a wonderful way of expressing creativity. It enables people to showcase their personalities through various methods including, painting, knitting, drawing and much more. Competitions are a great way to express unique artistic talents as well. 
+    Valdosta National is an art competition for 18 years old and above. There is a cash prize of $1,500, and this art competition is for people of all skill levels. <br>
+    Americas 2018 Paperworks is an art competition open to people with artistic talent of all skill levels. This competition requires more work since it includes specific and precise guidelines. This competition is also an exhibition where participants can display art work completed from the past two years.<br>
+    LeMoyne Chain of Parks Art Festival is a competition including a wide range of art from glass work, and pottery, to photography, and even jewelry. Each specific genre of art include its own guidelines that must be followed in order to be submitted. Open to all artists 18 years and older.
+
 </p><p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Recipe</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Pop-Up</button>
                             </div>
                         </div>
                     </div>
@@ -477,31 +483,33 @@ Salt<br>
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                <h2>Bruschetta</h2>
+                                <h2>Dance Competitions</h2>
                                 <p class="item-intro text-muted">
-<b>Ingredients:</b><br>
+<b>Competitions For you:</b><br>
 
-4 tablespoons olive oil<br>
-5 cloves garlic, finely minced<br>
-1 pint red grape tomatoes, halved lengthwise<br>
-1 whole baguette or crusty loaf<br>
-1 pint yellow grape tomatoes, halved lengthwise<br>
-1 tablespoon balsamic vinegar<br>
-16 whole fresh basil leaves<br>
-Salt and freshly ground black pepper<br>
-1 stick butter<br>
+ Southwestern Invitational: Zip Code 1) 75063- Texas-Dallas-
+<a href="http://ndca.org/events/calendar/2017/10/southwestern-invitational/">http://ndca.org/events/calendar/2017/10/southwestern-invitational/</a>
+
+<br>
+ 
+Paragon Open DanceSport Championships: Zip Code 2) 06902- Connecticut- Stamford-
+<a href="http://ndca.org/events/calendar/2017/10/paragon-open-dancesport-championships/">http://ndca.org/events/calendar/2017/10/paragon-open-dancesport-championships/</a>
+
+
+Hollywood Dancesport Championships: Zip Code 3) 91608- California- Los Angeles-
+<a href="http://ndca.org/events/calendar/2017/11/hollywood-dancesport-championships/">http://ndca.org/events/calendar/2017/11/hollywood-dancesport-championships/ </a>
+<br>
+
                                 </p>
-                                    Recipe:<br>
-                                    In a small skillet, heat the oil over medium-high heat. Add the garlic and stir, lightly frying for about a minute, removing before the garlic gets too brown (it can be golden). Pour the garlic and oil into a mixing bowl and allow to cool slightly.
+                                    Description:<br>
+                                    From hip-hop to jazz, there are many genres of dance suiting almost every personality. Dance expresses creativity. Performing and competing helps build self confidence and a stronger passion towards your dancing talent.<br>
+    Southwestern Invitational is a dance competition open to all ages in Dallas, Texas.<br>
+    Paragon Open Dancesport Championships are meant for the more professional and advanced dancers, hosted in Connecticut.<br>
+    Hollywood Dancesport Championships is open to all dancers, and even includes scholarship prize money.
 
-Add the red and yellow tomatoes, balsamic and basil to the bowl. Sprinkle with salt and pepper. Toss to combine, and then taste and add more basil if needed, and more salt if needed (don't over salt, though!) Cover and refrigerate for an hour or two if you have the time.
-
-Cut the baguette into diagonal slices to allow for the most surface area possible. Melt 4 tablespoons of the butter in a large skillet and grill half the bread on both sides, making sure they're nice and buttery. Cook until golden brown on both sides. Repeat with the remaining 4 tablespoons butter and the other half of the bread.
-
-To serve, give the tomato mixture a final stir, and then spoon generously over the slices of bread. Serve on a big platter as a first course or appetizer.
                                 </p>
                               </p><p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Recipe</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Pop-Up</button>
                             </div>
                         </div>
                     </div>
@@ -526,24 +534,39 @@ To serve, give the tomato mixture a final stir, and then spoon generously over t
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                   <!-- Project Details Go Here -->
-                                <h2>Fun Fruit Sushi</h2>
+                                <h2>Hackathons</h2>
                                 <p class="item-intro text-muted">
-<b>Ingredients:</b><br>
+<b>Competitions For You:</b><br>
 
-1 tablespoon unsalted butter<br>
-2/3 cup mini-marshmallows<br>
-2 cups cooked rice (any)<br>
-Nonstick vegetable oil spray<br>
-1 banana, thinly sliced<br>
-1/2 pint fruit medley, like strawberries, pineapple, kiwi, and cantaloupe<br>
-Thinly sliced mini chocolate chips and toasted shredded coconut, for topping sushi, optional<br>
+MLH: CodeRed:  Zip code 1) 77204 - Texas - Houston 
+
+<br> 
+
+<a href="https://uhcode.red/">https://uhcode.red/</a>
+
+<br>
+
+TechNexus: Zip Code 2) 60606- Illinois- Chicago
+<a href="https://hackevents.co/hackathon/usa/chicago/5033-colony-5-2017-civic-tech-challenge-hackathon">https://hackevents.co/hackathon/usa/chicago/5033-colony-5-2017-civic-tech-challenge-hackathon</a>
+
+<br>
+
+Harvard HackEd: Zip Code 3) 02138- Massachusetts- Cambridge
+<a href="https://hackevents.co/hackathon/usa/cambridge/4916-harvard-hacked-2017">https://hackevents.co/hackathon/usa/cambridge/4916-harvard-hacked-2017</a>
+
+<br>
+
   </p>
 
                                 <p>
-                                  Recipe:<br>
-                                To make sweet sticky "sushi" rice: In a medium saucepan over medium-low heat, melt the butter and marshmallows until completely soft. Remove from the heat and stir in the cooked rice until well blended. Spray the nigiri mold or ice cube tray lightly with nonstick spray. Take slices of the fruit medley and place in the bottom of the mold or ice cube tray. Spoon in rice and press gently into the fruit. Unmold the "sushi" and top with mini chocolate chips and toasted coconut, if desired.
+                                Descriptions:<br>
+                                Hackathons are a great platform to show your programming and engineering abilities, create cool projects, and meet people with same interests as you. Hackathons are cool because participants are allowed to create any form of code for any idea they have, from websites, and apps to unique gadgets as well.<br>
+Hackathons often last 12-36 hours and award prizes for the best projects created there.CodeRed is a free 24-hour event in Houston, Texas for high school and college students designed to get students to get creative and innovative in what they make and offers small workshops to help students in topics they may not be familiar with.<br>
+    Colony 5 2017 Civic Tech Challenge Hackathon is a 48-hour hackathon happening in Chicago from November 3-5. The hackathon makes students think in a more “into the future” ideas and projects.<br>
+    Harvard HackEd is a hackathon organized by HIVE (Harvard GSE Innovation & Ventures in Education) and provides a unique opportunity to meet new people think, design, create across 3 days! No technical or programming knowledge is needed.
+
 </p><p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Recipe</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Pop-Up</button>
                             </div>
                         </div>
                     </div>
@@ -566,43 +589,37 @@ Thinly sliced mini chocolate chips and toasted shredded coconut, for topping sus
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Chicken Kebabs with No-Cook Peach Chutney</h2>
+                                <h2>Mathematics Competitions</h2>
                                 <p class="item-intro text-muted">
-<b>Ingredients:</b><br>
-  <u>Marinade:</u><br>
-2 pounds boneless, skinless chicken thighs, cut into 1- to 1 1/2-inch cubes<br>
-1/2 cup peanut oil or grapeseed oil<br>
-1/4 cup loosely packed fresh cilantro leaves and stems <br>
-1/4 cup lime juice (about 2 limes)<br>
-2 tablespoons ground coriander<br>
-2 teaspoons garam masala<br>
-2 small serrano peppers, seeded and stemmed<br>
-One 1 1/2-inch knob ginger, peeled and chopped<br>
-Salt and freshly ground black pepper<br><br>
-<u>Fresh Peach Chutney:</u><br>
-10 ounces fresh or frozen and thawed peach slices (about 2 cups)<br>
-1 teaspoon grated ginger<br>
-1/2 teaspoon honey<br>
-1/4 teaspoon champagne vinegar<br>
-1/8 teaspoon chaat masala<br>
-Pinch red chile flakes<br>
-2 to 3 sprigs fresh cilantro<br>
-Juice of 1 lime, plus 1/4 teaspoon zest<br>
-Salt and freshly ground black pepper<br>
+<b>Competitions For You:</b><br>
+  AMC 8: Zip code 1) 48390- MIchigan-Walled Lake
+  <br>
+<a href="https://amc-reg.maa.org/amc_external/SchoolSearchByZipCode.aspx">https://amc-reg.maa.org/amc_external/SchoolSearchByZipCode.aspx</a>
+
+<br>
+
+ARML:  Zip code 2) 30609 - Georgia - Athens
+<br>
+<a href="http://www.arml2.com/arml_2017/page/index.php?page_type=public&page=home">http://www.arml2.com/arml_2017/page/index.php?page_type=public&page=home</a>
+
+<br>
+
+PUMaC:Zip code 3) 08544 - New Jersey - Princeton
+<br>
+<a href="https://jason-shi-f9dm.squarespace.com/">https://jason-shi-f9dm.squarespace.com/</a>
+
+<br>
+
 </p>
 
                                 <p>
-                                Recipe:<br>
-                                Special equipment: About 20 bamboo skewers, soaked in water for about 1 hour before cooking<br>
-
-  For the marinade: Place the chicken in a reseable plastic bag. Whizz up the oil, cilantro, lime juice, coriander, garam masala, serrano peppers and ginger in a food processor until smooth. Season with salt and black pepper. Pour over the chicken cubes, massage into the meat, and marinate in the fridge for at least 2 hours and up to 8 hours.<br>
-
-  For the chutney: Toss the peaches, ginger, honey, vinegar, chaat masala, if using, chile flakes, cilantro and lime juice and zest into a food processor or blender and blend until smooth. Season with salt and black pepper. Pour into a serving bowl, setting aside 1/4 cup for basting the chicken.<br>
-
-  For grilling the chicken: Preheat the grill to medium-high heat. Thread 4 to 5 chicken cubes onto two skewers at a time, lightly wiping off excess marinade with a paper towel. The cubes should be lightly touching, not tightly packed.
-
-  Grill the skewers on one side until golden brown, 5 to 7 minutes. Flip and baste with the reserved chutney. Grill the other side until golden brown, 5 to 7 minutes, then flip and baste again. Grill to seal the chutney glaze, another 30 seconds per side, then remove from the heat. Sprinkle with salt and a little more chaat masala, then serve with big bowl of the chutney.</a>.</p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Recipe</button>
+                                Description:<br>
+                                The math competitions are a great way to show an in depth understanding of advanced math concepts. For each contest, there is regional, state, and sometimes a national/international level. Some competitions offer cash prizes and scholarships for thousands of dollars which could benefit a college student. Math competitions focus on the application aspects of math, or applying what you learn in the classroom. Whether you just want to further your understanding in math or you want to win scholarships for college, math contests can help.<br>
+The AMC is the American Math Competition, and has different versions - the 8 which is for middle schoolers, and the 10/12 which is for high schoolers. For the high school competition, there is a local, invitational, and national level.<br>
+ARML (American Regions Mathematics League) is an annual competition that being together the brightest math students across the nation. It provides an opportunity that allows students to meet, socialize, and compete against one another. The ARML consists of several rounds such as an individual round, a power question (proof-based round), and two relay rounds.<br>
+PUMAC math competition is a student-run math competition held at Princeton University. This math competition is meant to be very fun and interactive. It even includes puzzles and math bowl competitions. This is extremely interactive as it it not just a test, but includes many interactive math games and activities.
+</p><p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Pop-Up</button>
                             </div>
                         </div>
                     </div>
@@ -626,58 +643,27 @@ Salt and freshly ground black pepper<br>
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>French Macarons</h2>
+                                <h2>Piano Competitions</h2>
                                 <p class="item-intro text-muted">
-  <b>Ingredients:</b><br>
-  1 3/4 cups confectioners' sugar<br>
-  1 cup almond flour<br>
-  3 large egg whites, at room temperature<br>
-  1/4 teaspoon cream of tartar<br>
-  Pinch of salt<br>
-  1/4 cup superfine sugar<br>
-  2 to 3 drops gel food coloring (see below)<br>
-  1/2 teaspoon vanilla, almond or mint extract<br>
-  Assorted fillings (see below)<br>
+  <b>Competitions For You:</b><br>
+  Cleveland International Piano Competition: Zip Code 1) 44106 - Cleveland - Ohio-  
+<a href="https://www.clevelandpiano.org/competitions/young-artists">https://www.clevelandpiano.org/competitions/young-artists</a>
+<br>
+2018 North American Biennal Competition: Zipe Code 2)  53211 - Milwaukee - Wisconsin
+<a href="http://pianoarts.org/competitions/schedule-of-events/">http://pianoarts.org/competitions/schedule-of-events/</a>
+<br>
+THE MTNA–STECHER AND HOROWITZ TWO PIANO COMPETITION: Zip Code 3) 32830  Lake Buena Vista - Florida
+<a href="https://www.mtna.org/MTNA/Engage/Two_Piano_Competition/Two_Piano_Competition.aspx">https://www.mtna.org/MTNA/Engage/Two_Piano_Competition/Two_Piano_Competition.aspx</a>
+<br>
 </p>
 
-                                <p>Recipe:<br>
-                                  Special equipment: Oven with convection setting, 4 baking sheets, 3 silicone baking mats, Fine-mesh sieve, Pastry bag with 1/4-inch round tip<br>
-
-  Preheat the oven to 300 degrees F using the convection setting. Line 3 baking sheets with silicone mats. Measure the confectioners' sugar and almond flour by spooning them into measuring cups and leveling with a knife. Transfer to a bowl; whisk to combine.
-
-  Sift the sugar-almond flour mixture, a little at a time, through a fine-mesh sieve into a large bowl, pressing with a rubber spatula to pass through as much as possible. It will take a while, and up to 2 tablespoons of coarse almond flour may be left; just toss it.
-
-  Beat the egg whites, cream of tartar and salt with a mixer on medium speed until frothy. Increase the speed to medium high; gradually add the superfine sugar and beat until stiff and shiny, about 5 more minutes.
-
-  Transfer the beaten egg whites to the bowl with the almond flour mixture. Draw a rubber spatula halfway through the mixture and fold until incorporated, giving the bowl a quarter turn with each fold.
-
-  Add the food coloring and extract (see below). Continue folding and turning, scraping down the bowl, until the batter is smooth and falls off the spatula in a thin flat ribbon, 2 to 3 minutes.
-
-  Transfer the batter to a pastry bag fitted with a 1/4-inch round tip. Holding the bag vertically and close to the baking sheet, pipe 1 1/4-inch circles (24 per sheet). Firmly tap the baking sheets twice against the counter to release any air bubbles.
-
-  Let the cookies sit at room temperature until the tops are no longer sticky to the touch, 15 minutes to 1 hour, depending on the humidity. Slip another baking sheet under the first batch (a double baking sheet protects the cookies from the heat).
-
-  Bake the first batch until the cookies are shiny and rise 1/8 inch to form a "foot," about 20 minutes. Transfer to a rack to cool completely. Repeat, using a double sheet for each batch. Peel the cookies off the mats and sandwich with a thin layer of filling (see below). <br>
-
-  Almond-Raspberry:<br>
-
-  Tint the batter with 2 drops neon pink gel food coloring; flavor with almond extract. Fill with seedless raspberry jam (you'll need about 3/4 cup). <br>
-
-  Mint-White Chocolate:<br>
-
-  Tint the batter with 2 drops mint green gel food coloring; flavor with mint extract. For the filling, microwave 3 ounces chopped white chocolate, 2 tablespoons heavy cream and 1 tablespoon butter in 30-second intervals, stirring, until smooth. Stir in 1/4 teaspoon mint extract and 1 drop mint green gel food coloring.<br>
-
-  Blueberry Cheesecake:<br>
-
-  Tint the batter with 3 drops royal blue gel food coloring; flavor with vanilla extract. For the filling, mix 4 ounces softened cream cheese and 3 tablespoons blueberry jam.<br>
-
-  Lavendar-Honey:<br>
-
-  Tint the batter with 2 drops violet gel food coloring; flavor with almond or vanilla extract. For the filling, mix 3/4 cup mascarpone cheese, 2 tablespoons honey and 1 teaspoon ground dried lavender.<br>
-
-  Pineapple:<br>
-  Tint the batter with 2 drops lemon yellow gel food coloring; flavor with vanilla extract. For the filling, press 3/4 cup pineapple jam through a sieve, discarding any large pieces.<br>
-<p>                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Recipe</button>
+                                <p>Description:<br>
+                                     Piano is a popular musical instrument played by many people all over the world. Piano not only helps compose and play music, but also helps singers and choirs with notes. Playing the piano is a great skill is and involves a lot of concentration and coordination, due to all of the notes and keys you need to memorize in order to play the music. Playing the piano requires a lot of practice to play perfectly. With a some hard work and practice, everyone will be able to play songs of their choice on the piano.<br>
+    The Cleveland International Piano Competition is a one day competition for ages 12-17 divided into a junior and senior category where they perform 3 solo rounds and 1 final round with the Canton Symphony Orchestra. After many rounds, the finalists compete at Maltz Performing Art Center at Case Western Reserve University. It is a great opportunity for young pianists and great for other to come and watch.<br>
+    The 2018 North American Biennial Competition is challenging competition for students in the age of 16-21 that live in the North America. Competitors apply and send their videos and the chosen competitors are invited to Milwaukee,Wisconsin to compete and perform with Milwaukee Symphony Orchestra.<br>
+    THE MTNA–STECHER AND HOROWITZ TWO PIANO COMPETITION is duo piano competition where competitors submit their video and selected competitors come down Lake Buena Vista, Florida to compete in a final round and win large prizes.
+</p>
+<p>                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Pop-Up</button>
                             </div>
                         </div>
                     </div>
@@ -701,25 +687,27 @@ Salt and freshly ground black pepper<br>
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Penne with Sun-Dried Tomato Pesto</h2>
+                                <h2>Tennis Competitions</h2>
                                 <p class="item-intro text-muted">
-<b>Ingredients:</b><br>
-12 ounces penne pasta<br>
-1 (8.5-ounce) jar sun-dried tomatoes packed in olive oil<br>
-2 garlic cloves<br>
-Salt and freshly ground black pepper<br>
-1 cup (packed) fresh basil leaves<br>
-1/2 cup freshly grated Parmesan<br>
+<b>Competitions For You:</b><br>
+Zip code 1) 48377-Michigan- Novi 
+<a href="http://tennislink.usta.com/Tournaments/TournamentHome/Tournament.aspx?T=201721">http://tennislink.usta.com/Tournaments/TournamentHome/Tournament.aspx?T=201721</a>
+<br>
+Zip code 2) 90001- California- Los Angeles
+<a href="http://tennislink.usta.com/Tournaments/TournamentHome/Tournament.aspx?T=199162">http://tennislink.usta.com/Tournaments/TournamentHome/Tournament.aspx?T=199162</a>
+<br>
+Zip code 3) 32003- Florida- Orange Park 
+<a href="http://tennislink.usta.com/Tournaments/TournamentHome/Tournament.aspx?T=191250">http://tennislink.usta.com/Tournaments/TournamentHome/Tournament.aspx?T=191250</a>
+<br>
+
 </p>
 
-                                <p>Recipe:<br>
-                                  Cook the pasta in a large pot of boiling salted water until tender but still firm to the bite, stirring occasionally, about 8 minutes. Drain, reserving 1 cup of the cooking liquid.
+                                <p>Description:<br>
+                                  Tennis is a sport that greatly engages the body as well as the mind. It's a great sport to maintain your health, fitness, strength, and agility.  Through these competitions, you can improve your tennis skills, stay healthy, and have fun at the same time. From beginner level to national levels, there are tournaments for all ages and skill levels.<br>
+    The following tennis tournaments are all conducted through the USTA, (United States Tennis Association). Along with tennis tournaments for all ages, the USTA also provides tips and instruction, health tips, and instruction and coaching on tennis. The USTA has many coaching programs open to everyone, designed to help people improve their tennis skills to help prepare for competitions.
 
-                                  Meanwhile, blend the sun-dried tomatoes and their oil, garlic, salt and pepper, to taste, and basil in a food processor and blend until the tomatoes are finely chopped. Transfer the tomato mixture to a large bowl. Stir in the Parmesan.
-
-                                  Add the pasta to the pesto and toss to coat, adding enough reserved cooking liquid to moisten. Season the pasta, to taste, with salt and pepper and serve.
-                                </a>.</p><p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Recipe</button>
+                                </p><p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Pop-Up</button>
                             </div>
                         </div>
                     </div>
